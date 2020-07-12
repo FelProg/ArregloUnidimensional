@@ -14,12 +14,15 @@ namespace DiasDeLaSemanaPractica1
     {
         static void Main(string[] args)
         {
+            //declaración del arreglo.
             string[] diasDeLaSemana = new string[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" };
 
-                
+            //se obtiene solo la opción valida de la función local.    
             int op = CapturaDeOpcion(diasDeLaSemana);
             Console.WriteLine($"\nEl día seleccionado es : {diasDeLaSemana[op-1]}");
             Console.WriteLine($"Presione cualquier tecla para salir... Muchas gracias");
+
+            //el argumento true es para que no se vea el valor al teclearlo.
             Console.ReadKey(true);
         }
 
